@@ -1,0 +1,194 @@
+@import '../constants/palette.scss';
+
+body {
+	background: $color3;
+	font-family: sans-serif;
+	color: #4a4a4a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	background-color: $color3;
+	margin: auto;
+}
+.container {
+	display: flex;
+	margin: auto;
+	width: 100%;
+	background: white;
+	border-radius: 4px;
+	border: 1px solid $grey0;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+	border-top: 3px solid $primary;
+	padding: 0;
+	.section_header {
+		padding: 20px;
+		background-color: $grey0;
+		text-align: center;
+		margin: 0;
+	}
+	.form {
+		padding: 30px;
+		.mainInfo {
+			display: flex;
+			flex-direction: row;
+			.nameLocation {
+				.location {
+					color: $grey3;
+				}
+				.fullName {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					align-items: flex-start;
+					justify-content: flex-start;
+					p {
+						text-align: left;
+						padding-right: 10px;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
+button {
+	background-color: $primary;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	margin-top: 15px;
+	width: 100%;
+	padding: 5px;
+}
+h1 {
+	font-size: 20px;
+}
+h2 {
+	font-size: 16px;
+	color: $grey4;
+}
+input {
+	border: none;
+	background-color: $grey2;
+	padding: 5px;
+	color: $grey4;
+	border-radius: 4px;
+	width: 100%;
+	text-align: right;
+	margin-left: 5px;
+	font-size: 12px;
+}
+.timeInput {
+	width: 50px;
+}
+label {
+	white-space: nowrap;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	color: $grey4;
+}
+.resultContainer {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+.half:hover {
+	background-color: #f5f8fc;
+}
+.resultHeader {
+	font-size: 16px;
+}
+.half {
+	margin-left: 50px;
+	margin-right: 50px;
+	border-left: 1px solid #f9f9f9;
+	display: flex;
+	flex: 1;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	p {
+		width: 70%;
+		font-size: 14px;
+		font-weight: semibold;
+		color: #4a4a4a;
+		text-transform: uppercase;
+	}
+	h2 {
+		font-size: 12px;
+	}
+}
+.highlight {
+	color: $primary;
+	font-size: 20px;
+}
+table {
+	width: 95%;
+	align-self: center;
+	th {
+		font-size: 14px;
+		font-weight: semibold;
+		color: #4a4a4a;
+		background-color: #f9f9f9;
+		text-transform: uppercase;
+		text-align: right;
+	}
+
+	tr:hover {
+		background-color: #f5f8fc;
+	}
+}
+table {
+	border-collapse: collapse;
+}
+table,
+th,
+td {
+	border-top: 1px solid #e6e6e6;
+	padding: 15px;
+}
+td {
+	text-align: right;
+}
+@media (max-width: 450px) {
+	table,
+	th,
+	td {
+		font-size: 10px !important;
+		padding: 5px;
+	}
+	.form {
+		padding: 5px !important;
+	}
+	.timeInput {
+		width: 16px;
+	}
+	.highlight {
+		font-size: 16px;
+	}
+}
+@media (max-width: 650px) {
+	.half {
+		margin: 10px;
+		p {
+			width: 70%;
+			font-size: 10px;
+		}
+	}
+	.resultContainer {
+		flex-direction: row;
+	}
+}
