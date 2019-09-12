@@ -1,5 +1,7 @@
 ## Javascript Auto Loan Calculator
 
+Fully responsive web app built with React.js that takes inputs from the user and calculates monthly payment, total interest rate and amortization schedule.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
